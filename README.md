@@ -17,15 +17,20 @@ on your system and in your PATH.
 A quick seach for `how to install SoX on (windows|ubuntu|mac)` should do the trick
 for you if you don't know how to install it, at least it did for me.
 
+If you are on mac, just run 
+```bash
+brew install sox
+```
+
 ## Install
 
 First, clone the repository:
 
 ```bash
-git clone git@github.com:asciidisco/deepspeech-demo.git
+git clone https://github.com/asciidisco/deepspeech-demo.git
 ```
 
-Then change into the directory & perform an npm install:
+Then change into the directory & perform an npm install to install the node application dependencies.
 
 ```bash
 npm install
@@ -34,7 +39,7 @@ npm install
 As this downloads the pre-trained models from the DeepSpeech releases as a postinstall step,
 which are roughly 1.4 GB, it might take a while.
 
-After that, start the server using:
+After that, start the node.js server application using:
 
 ```bash
 npm start
@@ -48,4 +53,5 @@ The user interface is quite reduced, after you´ve agreed that the page is allow
 to use your microphone, you just need to hit the "Listen" button and speak a few words
 into your microphone. After you finished your sentence, you need to hit the "Listening..."
 button once again, so that the recorded sound can be processed.
+
 After a few seconds, you should see the text in the result box below the button.
